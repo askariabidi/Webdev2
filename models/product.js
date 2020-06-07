@@ -11,7 +11,7 @@ const productSchema = new mongoose.Schema(
             maxlength: 32
         },
         isbn: {
-            type: Number,
+            type: String,
             required: true
         },
         publisher: {
