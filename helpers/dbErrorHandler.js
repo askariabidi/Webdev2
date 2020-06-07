@@ -3,7 +3,7 @@
 /**
  * Get unique error field name
  */
-const uniqueMessage = error => {
+const uniqueMessage = error => { 
     let output;
     try {
         let fieldName = error.message.substring(
