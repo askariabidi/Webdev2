@@ -6,7 +6,7 @@ Group Members:
 2. Wasif Rashid - 14929
 
 Using:
-MySQL
+MongoDb
 Expressjs
 Reactjs
 Nodejs 
