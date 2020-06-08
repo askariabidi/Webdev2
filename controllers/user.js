@@ -89,7 +89,8 @@ exports.addOrderToUserHistory = (req, res, next) => {
             category: item.category,
             quantity: item.count,
             transaction_id: req.body.order.transaction_id,
-            amount: req.body.order.amount
+            amount: req.body.order.amount,
+            status: req.body.order.status
         });
     });
 
@@ -105,6 +106,7 @@ exports.addOrderToUserHistory = (req, res, next) => {
 
 exports.purchaseHistory = (req, res) => {
     Order.find({ user: req.profile._id })
+        .populate('status')
         .populate('user', '_id name')
         .sort('-created')
         .exec((err, orders) => {
