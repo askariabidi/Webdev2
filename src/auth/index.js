@@ -16,8 +16,6 @@ export const signup = user => {
         });
 };
 
-
-
 export const signin = user => {
     return fetch(`http://localhost:8001/api/signin`, {
         method: 'POST',
