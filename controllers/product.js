@@ -41,6 +41,8 @@ exports.create = (req, res) => {
             });
         }
 
+        
+
         let product = new Product(fields);
 
         // 1kb = 1000
